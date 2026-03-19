@@ -192,7 +192,7 @@ class POS_Settings extends Vitepos_Module {
 	 * @return string
 	 */
 	public function get_manifest_link() {
-		return $this->get_pos_link( false ) . '/apbd_vt_manifest.js';
+		return add_query_arg( '_vtf', 'manifest', $this->get_pos_link( false ) );
 	}
 
 	/**
