@@ -1604,6 +1604,7 @@ class POS_Settings extends Vitepos_Module {
 		settings: vitePosBase + "basic/settings",
 		current_user: vitePosBase + "user/current-user",
 		get_logged_user: vitePosBase + "user/get-logged-user",
+		get_caps: vitePosBase + "user/capabilities",
 		product_list: vitePosBase + "product/list",
 		list_variation: vitePosBase + "product/list-variation",
 		order_list: vitePosBase + "order/order-list",
