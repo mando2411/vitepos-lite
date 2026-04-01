@@ -68,7 +68,8 @@ class VitePosLite extends Kernel_Lite {
 		 *
 		 * @since   1.0
 		 */
-		if ( in_array( 'vitepos/vite-pos.php', vitepos_apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
+		$active_plugins = vitepos_apply_filters( 'active_plugins', get_option( 'active_plugins' ) );
+		if ( in_array( 'vitepos/vitepos.php', $active_plugins, true ) || in_array( 'vitepos/vite-pos.php', $active_plugins, true ) ) {
 			return;
 		}
 		parent::on_init();
